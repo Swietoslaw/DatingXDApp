@@ -31,9 +31,13 @@ export class ErrorInterceptor implements HttpInterceptor {
                 }
                 throw modalStateErrors.flat();
               } 
+              else if (error.error === "You alredy like this user")
+              {
+                this.toastr.warning(error.statusText === "OK" ? "You alredy like this user" : error.statusText, error.status);
+              }
               else
               {
-                this.toastr.warning(error.statusText === "OK" ? "Bad Request" : error.statusText, error.status);
+                this.toastr.error(error.statusText === "OK" ? "Bad Request" : error.error, error.status);
               }
               break;
             case 401:
