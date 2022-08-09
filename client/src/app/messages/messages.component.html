@@ -10,7 +10,7 @@
         </button>
         <button class="btn btn-primary ml-3" btnRadio="Outbox" [(ngModel)]="container"
             (click)="loadMessages()">
-            <i class="fa fa-envelope-plane"></i> Outbox
+            <i class="fa fa-paper-plane"></i> Outbox
         </button>
     </div>
 </div>
@@ -39,7 +39,7 @@
                         alt="{{message.recipientUserName}}">
                         <strong>{{message.recipientUserName | titlecase}}</strong>
                 </div>
-                <div *ngIf="container !== 'Outbox'">
+                <div *ngIf="container === 'Inbox'">
                     <img
                         class="img-circle rounded-circle mr-2"
                         src="{{message.senderPhotoUrl || './assets/user.png'}}"
