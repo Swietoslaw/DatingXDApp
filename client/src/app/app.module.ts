@@ -30,6 +30,8 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
 import { PlatformComponent } from './platform/platform.component';
 import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HasRoleDirective } from './_directives/has-role.directive';
+import { UserManagmestComponent } from './admin/user-managmest/user-managmest.component';
+import { PhotoManagmestComponent } from './admin/photo-managmest/photo-managmest.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { HasRoleDirective } from './_directives/has-role.directive';
     MemberMessagesComponent,
     PlatformComponent,
     AdminPanelComponent,
-    HasRoleDirective
+    HasRoleDirective,
+    UserManagmestComponent,
+    PhotoManagmestComponent
   ],
   imports: [
     BrowserModule,
