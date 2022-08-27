@@ -30,9 +30,9 @@ import { MemberMessagesComponent } from './members/member-messages/member-messag
 import { PlatformComponent } from './platform/platform.component';
 import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HasRoleDirective } from './_directives/has-role.directive';
-import { UserManagmestComponent } from './admin/user-managmest/user-managmest.component';
-import { PhotoManagmestComponent } from './admin/photo-managmest/photo-managmest.component';
 import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
+import { UserManagmentComponent } from './admin/user-managment/user-managment.component';
+import { PhotoManagmentComponent } from './admin/photo-managment/photo-managment.component';
 
 @NgModule({
   declarations: [
@@ -56,9 +56,9 @@ import { RolesModalComponent } from './modals/roles-modal/roles-modal.component'
     PlatformComponent,
     AdminPanelComponent,
     HasRoleDirective,
-    UserManagmestComponent,
-    PhotoManagmestComponent,
-    RolesModalComponent
+    RolesModalComponent,
+    UserManagmentComponent,
+    PhotoManagmentComponent
   ],
   imports: [
     BrowserModule,
@@ -76,5 +76,6 @@ import { RolesModalComponent } from './modals/roles-modal/roles-modal.component'
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true},
   ],
   bootstrap: [AppComponent]
+  
 })
 export class AppModule { }
