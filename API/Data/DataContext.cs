@@ -23,6 +23,7 @@ namespace API.Data
         public DbSet<Message> Messages { get; set; }
         public DbSet<Group> Groups { get; set; }
         public DbSet<Connection> Connections { get; set; }
+        public DbSet<Postulate> Postulates { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -64,6 +65,12 @@ namespace API.Data
                 .HasOne(u => u.Sender)
                 .WithMany(m => m.MessageSend)
                 .OnDelete(DeleteBehavior.Restrict);
+            
+            builder.Entity<Postulate>()
+                .HasOne(u => u.Sender)
+                .WithMany(p => p.PostulateSend)
+                .OnDelete(DeleteBehavior.Restrict);
+                
 
             builder.ApplyUtcDateTimeConverter();
         }

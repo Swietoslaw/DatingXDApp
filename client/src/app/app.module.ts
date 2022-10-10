@@ -27,13 +27,14 @@ import { PhotoEditorComponent } from './members/photo-editor/photo-editor.compon
 import { TextInputComponent } from './_forms/text-input/text-input.component';
 import { DateInputComponent } from './_forms/date-input/date-input.component';
 import { MemberMessagesComponent } from './members/member-messages/member-messages.component';
-import { PlatformComponent } from './platform/platform.component';
+import { PlatformComponent } from './Platforms/platform/platform.component';
 import { AdminPanelComponent } from './admin/admin-panel/admin-panel.component';
 import { HasRoleDirective } from './_directives/has-role.directive';
 import { RolesModalComponent } from './modals/roles-modal/roles-modal.component';
 import { UserManagmentComponent } from './admin/user-managment/user-managment.component';
 import { PhotoManagmentComponent } from './admin/photo-managment/photo-managment.component';
 import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
+import { PlatformCardComponent } from './Platforms/platform-card/platform-card.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.c
     RolesModalComponent,
     UserManagmentComponent,
     PhotoManagmentComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    PlatformCardComponent
   ],
   imports: [
     BrowserModule,
