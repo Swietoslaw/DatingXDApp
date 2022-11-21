@@ -34,6 +34,7 @@ import { RolesModalComponent } from './modals/roles-modal/roles-modal.component'
 import { UserManagmentComponent } from './admin/user-managment/user-managment.component';
 import { PhotoManagmentComponent } from './admin/photo-managment/photo-managment.component';
 import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.component';
+import { PlatformCardComponent } from './platform-card/platform-card.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +61,8 @@ import { ConfirmDialogComponent } from './modals/confirm-dialog/confirm-dialog.c
     RolesModalComponent,
     UserManagmentComponent,
     PhotoManagmentComponent,
-    ConfirmDialogComponent
+    ConfirmDialogComponent,
+    PlatformCardComponent
   ],
   imports: [
     BrowserModule,
